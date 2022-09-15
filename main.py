@@ -28,7 +28,6 @@ for i, v in enumerate(np.linspace(1, 0.5, image.shape[0])):
     y = 0
 
     while(x >= 0):
-        print(x , y)
         r = lerp(color1[0], color2[0], v) 
         g = lerp(color1[1], color2[1], v)
         b = lerp(color1[2], color2[2], v)
