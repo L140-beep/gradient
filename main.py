@@ -23,7 +23,7 @@ color2 = [0, 128, 255]
 #благодаря этому замечательнейшему анализу, я понял, что для поворота на 45 градусов нужно поиграть с методом расположения цветов
 #в image, так как мы физически не сможем сделать градиент, когда у нас заполняется сразу вся строка.
 
-for i, v in enumerate(np.linspace(0, 0.5, image.shape[0])):
+for i, v in enumerate(np.linspace(1, 0.5, image.shape[0])):
     x = i 
     y = 0
 
@@ -36,7 +36,7 @@ for i, v in enumerate(np.linspace(0, 0.5, image.shape[0])):
         y += 1
         x -= 1
 
-for i, v in enumerate(np.linspace(0.5, 1, image.shape[0])):
+for i, v in enumerate(np.linspace(0.5, 0, image.shape[0])):
     x = size - 1
     y = i
     while(y < size):
